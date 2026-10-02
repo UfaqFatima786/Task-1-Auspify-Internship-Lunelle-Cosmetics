@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rosewater Beauty | Makeup Store</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="glow" id="glow"></div>
+
+    <header>
+        <nav>
+            <a href="#home" class="logo">Rosewater</a>
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
+            <ul class="links" id="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><span class="cart">Cart: <span id="count">0</span></span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div>
+                <h1>Find the shade that feels <span>like you</span></h1>
+                <p>Lipsticks, foundations and glow essentials made with gentle ingredients for everyday skin.</p>
+                <div class="cta">
+                    <a href="#products" class="btn">Shop now</a>
+                    <a href="#about" class="btn ghost">Our story</a>
+                </div>
+                <div class="picker">
+                    <small>Tap a shade to try it on the lipstick</small>
+                    <div class="swatches" id="swatches">
+                        <button class="swatch active" style="background:#d6336c" data-c="#d6336c"
+                            aria-label="Rose"></button>
+                        <button class="swatch" style="background:#e8590c" data-c="#e8590c" aria-label="Coral"></button>
+                        <button class="swatch" style="background:#a61e4d" data-c="#a61e4d" aria-label="Berry"></button>
+                        <button class="swatch" style="background:#f783ac" data-c="#f783ac"
+                            aria-label="Bubblegum"></button>
+                        <button class="swatch" style="background:#862e3a" data-c="#862e3a" aria-label="Wine"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-art">
+                <div class="circle">
+                    <div class="lipstick">
+                        <div class="tip"></div>
+                        <div class="cap"></div>
+                        <div class="body"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <img class="about-img" src="images/about.jpg" alt="Makeup brushes and products">
+            <div>
+                <h2>Makeup that respects your skin</h2>
+                <p>Rosewater started with a simple idea: beauty should be easy, kind and fun. Every product is
+                    cruelty-free, dermatologist tested and made in shades for every skin tone.</p>
+                <p>Whether you want a quick everyday look or a full evening glam, we have what you need.</p>
+                <div class="stats">
+                    <div><b>50+</b>Shades</div>
+                    <div><b>10k</b>Happy customers</div>
+                    <div><b>100%</b>Cruelty-free</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products">
+            <h2 class="title">Our products</h2>
+            <p class="sub">Pick a category to filter, then add your favourites to the cart.</p>
+            <div class="filters" id="filters">
+                <button class="active" data-f="all">All</button>
+                <button data-f="lips">Lips</button>
+                <button data-f="face">Face</button>
+                <button data-f="eyes">Eyes</button>
+                <button data-f="nails">Nails</button>
+            </div>
+            <div class="grid" id="grid">
+                <article class="card" data-cat="lips">
+                    <img src="images/product-1.jpg" alt="Velvet Lipstick">
+                    <h3>Velvet Lipstick</h3>
+                    <p>Creamy matte, 12 hour wear</p>
+                    <div class="price">Rs. 1,499</div>
+                    <button class="btn add">Add to cart</button>
+                </article>
+                <article class="card" data-cat="lips">
+                    <img src="images/product-2.jpg" alt="Glossy Tint">
+                    <h3>Glossy Tint</h3>
+                    <p>Juicy shine with light colour</p>
+                    <div class="price">Rs. 999</div>
+                    <button class="btn add">Add to cart</button>
+                </article>
+                <article class="card" data-cat="lips">
+                    <img src="images/product-3.jpg" alt="Lip Liner">
+                    <h3>Lip Liner</h3>
+                    <p>Defines and prevents bleeding</p>
+                    <div class="price">Rs. 599</div>
+                    <button class="btn add">Add to cart</button>
+                </article>
+                <article class="card" data-cat="lips">
+                    <img src="images/product-4.jpg" alt="Lip Balm">
+                    <h3>Lip Balm</h3>
+                    <p>Soft, hydrated lips all day</p>
+                    <div class="price">Rs. 499</div>
+                    <button class="btn add">Add to cart</button>
+                </article>
+                <article class="card" data-cat="face">
+                    <img src="images/product-5.jpg" alt="Silk Foundation">
+                    <h3>Silk Foundation</h3>
+                    <p>Lightweight natural coverage</p>
+                    <div class="price">Rs. 2,299</div>
+                    <button class="btn add">Add to cart</button>
+                </article>
+                <article class="card" data-cat="face">
+                    <img src="images/product-6.jpg" alt="Blush Bloom">
+                    <h3>Blush Bloom</h3>
+                    <p>Soft pink flush for cheeks</p>
+                    <div class="price">Rs. 1,199</div>
+                    <button class="btn add">Add to cart</button>
+                </article>
+                <article class="card" data-cat="face">
+                    <img src="images/product-7.jpg" alt="Glow Highlighter">
+                    <h3>Glow Highlighter</h3>
+                    <p>Dewy shimmer for cheekbones</p>
+                    <div class="price">Rs. 1,399</div>
+                    <button class="btn add">Add to cart</button>
+                </article>
+                <article class="card" data-cat="face">
+                    <img src="images/product-8.jpg" alt="Setting Powder">
+                    <h3>Setting Powder</h3>
+                    <p>Smooth finish, no shine</p>
+                    <div class="price">Rs. 1,299</div>
+                    <button class="btn add">Add to cart</button>
+                </article>
+                <article class="card" data-cat="eyes">
+                    <img src="images/product-9.jpg" alt="Eyeshadow Palette">
+                    <h3>Eyeshadow Palette</h3>
+                    <p>12 blendable rosy shades</p>
+                    <div class="price">Rs. 2,799</div>
+                    <button class="btn add">Add to cart</button>
+                </article>
+                <article class="card" data-cat="eyes">
+                    <img src="images/product-10.jpg" alt="Lash Lift Mascara">
+                    <h3>Lash Lift Mascara</h3>
+                    <p>Volume without clumps</p>
+                    <div class="price">Rs. 1,099</div>
+                    <button class="btn add">Add to cart</button>
+                </article>
+                <article class="card" data-cat="eyes">
+                    <img src="images/product-11.jpg" alt="Kajal Pencil">
+                    <h3>Kajal Pencil</h3>
+                    <p>Deep black, smudge proof</p>
+                    <div class="price">Rs. 449</div>
+                    <button class="btn add">Add to cart</button>
+                </article>
+                <article class="card" data-cat="nails">
+                    <img src="images/product-12.jpg" alt="Gel Nail Polish">
+                    <h3>Gel Nail Polish</h3>
+                    <p>Glossy colour, chip resistant</p>
+                    <div class="price">Rs. 699</div>
+                    <button class="btn add">Add to cart</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="title">Contact us</h2>
+            <p class="sub">Questions about a shade or an order? Send us a message.</p>
+            <div class="contact-wrap">
+                <form id="form" novalidate>
+                    <input type="text" id="name" placeholder="Your name" aria-label="Your name">
+                    <input type="email" id="email" placeholder="Email address" aria-label="Email address">
+                    <textarea id="text" placeholder="Your message" aria-label="Your message"></textarea>
+                    <button class="btn" type="submit">Send message</button>
+                    <div id="msg" role="status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo">Rosewater</div>
+        <p>Makeup made simple.</p>
+        <div class="social"><a href="#home">Home</a><a href="#about">About</a><a href="#products">Products</a><a
+                href="#contact">Contact</a></div>
+        <small>&copy; 2026 Rosewater Beauty. All rights reserved.</small>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>
