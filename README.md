@@ -233,10 +233,7 @@ Through this project, I strengthened my understanding of:
 
 I enjoy building modern, responsive, and user-friendly web experiences while continuously improving my frontend development skills.
 
-### Connect With Me
-
-* 💻 **GitHub:** [UfaqFatima786](https://github.com/UfaqFatima786)
----
+--
 
 ## ⭐ Support
 
